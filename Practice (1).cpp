@@ -40,7 +40,7 @@ void findParameters(const vector<Point>& ysha)
 int main()
 {
 
-	vector <Point> Rebro;
+	vector <Point> bolshak;
 	ifstream work_file("Z:/Книга1.csv");
 	string line;
 	while (getline(work_file, line))
@@ -57,12 +57,12 @@ int main()
 			Point point;
 			point.x = x;
 			point.y = y;
-			Rebro.push_back(point);
+			bolshak.push_back(point);
 			x++;
 
 		}
 		try {
-			findParameters(Rebro);
+			findParameters(bolshak);
 			cout << k << " " << b << endl;
 		}
 		catch (exception& ex) {
